@@ -6,14 +6,13 @@ A full-featured RESTful API for managing doctors, patients, and appointments —
 
 The Clinic Appointment Management API is a backend service that streamlines clinic operations by handling:
 
-👨‍⚕️ Doctor information
-
 🧍‍♀️ Patient records
+
+👨‍⚕️ Doctor information
 
 📅 Appointment scheduling
 
-It follows the MVC architecture and supports cloud deployment via Render
- with database management through MongoDB Atlas.
+It follows the MVC architecture with database management through MongoDB Atlas.
 
 # 🌐 API Endpoints
 
@@ -62,7 +61,6 @@ PORT=3000
 
 ✅ Full CRUD operations for all entities
 ✅ Connected to MongoDB Atlas
-✅ Hosted and live on Render
 ✅ Follows MVC structure
 ✅ Environment variable security
 ✅ Works perfectly with Postman
@@ -72,9 +70,6 @@ PORT=3000
 
 💻 Local Testing:
 Use Postman with http://localhost:3000 as the base URL.
-
-🌍 Live API Testing:
-Use the deployed Render link: https://se2clinicappointmentsystem.onrender.com/
 
 API Testing in Postman 
 Watch on: https://drive.google.com/drive/folders/1pHJ3m1B617qUHZ64uyfVgZa3kwQ-HxdB?usp=drive_link
