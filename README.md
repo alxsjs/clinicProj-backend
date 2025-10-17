@@ -75,3 +75,6 @@ Use Postman with http://localhost:3000 as the base URL.
 
 🌍 Live API Testing:
 Use the deployed Render link: https://se2clinicappointmentsystem.onrender.com/
+
+API Testing in Postman 
+Watch on: https://drive.google.com/drive/folders/1pHJ3m1B617qUHZ64uyfVgZa3kwQ-HxdB?usp=drive_link
