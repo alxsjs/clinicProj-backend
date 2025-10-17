@@ -17,18 +17,6 @@ It follows the MVC architecture and supports cloud deployment via Render
 
 # 🌐 API Endpoints
 
-## 👨‍⚕️ Doctor Routes
-
-| Method | Endpoint | Description |
-|--------|-----------|-------------|
-| GET | `/api/doctors` | Retrieve all doctors |
-| GET | `/api/doctors/:id` | Retrieve a doctor by ID |
-| POST | `/api/doctors` | Add a new doctor |
-| PUT | `/api/doctors/:id` | Update an existing doctor |
-| DELETE | `/api/doctors/:id` | Delete a doctor |
-
----
-
 ## 🧍‍♀️ Patient Routes
 
 | Method | Endpoint | Description |
@@ -38,6 +26,18 @@ It follows the MVC architecture and supports cloud deployment via Render
 | POST | `/api/patients` | Add a new patient |
 | PUT | `/api/patients/:id` | Update patient details |
 | DELETE | `/api/patients/:id` | Delete a patient |
+
+---
+
+## 👨‍⚕️ Doctor Routes
+
+| Method | Endpoint | Description |
+|--------|-----------|-------------|
+| GET | `/api/doctors` | Retrieve all doctors |
+| GET | `/api/doctors/:id` | Retrieve a doctor by ID |
+| POST | `/api/doctors` | Add a new doctor |
+| PUT | `/api/doctors/:id` | Update an existing doctor |
+| DELETE | `/api/doctors/:id` | Delete a doctor |
 
 ---
 
