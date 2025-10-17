@@ -12,11 +12,16 @@ The Clinic Appointment Management API is a backend service that streamlines clin
 
 📅 Appointment scheduling
 
-It follows the MVC architecture with database management through MongoDB Atlas.
+## It follows the MVC architecture with database management through MongoDB Atlas.
+
+## BASE URL 
+
+http://localhost:3000/api
 
 # 🌐 API Endpoints
 
 ## 🧍‍♀️ Patient Routes
+POST http://localhost:3000/api/patients
 
 | Method | Endpoint | Description |
 |--------|-----------|-------------|
@@ -29,6 +34,7 @@ It follows the MVC architecture with database management through MongoDB Atlas.
 ---
 
 ## 👨‍⚕️ Doctor Routes
+POST http://localhost:3000/api/doctors
 
 | Method | Endpoint | Description |
 |--------|-----------|-------------|
@@ -41,6 +47,7 @@ It follows the MVC architecture with database management through MongoDB Atlas.
 ---
 
 ## 📅 Appointment Routes
+POST http://localhost:3000/api/appointments
 
 | Method | Endpoint | Description |
 |--------|-----------|-------------|
@@ -69,7 +76,7 @@ PORT=3000
 # 🧪 Testing Demonstrations
 
 💻 Local Testing:
-Use Postman with http://localhost:3000 as the base URL.
+Use Postman with http://localhost:3000/api as the base URL.
 
 API Testing in Postman 
 Watch on: https://drive.google.com/drive/folders/1pHJ3m1B617qUHZ64uyfVgZa3kwQ-HxdB?usp=drive_link
