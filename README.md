@@ -31,6 +31,26 @@ POST http://localhost:3000/api/patients
 | PUT | `/api/patients/:id` | Update patient details |
 | DELETE | `/api/patients/:id` | Delete a patient |
 
+## Sample Requests 
+
+### Create Patient (POST)
+POST http://localhost:3000/api/patients
+Body (JSON):
+{
+  "name": "Alexise",
+  "birthDate": "2003-07-29",
+  "email": "alexissiviorre136@gmail.com",
+  "phone": "09924932458"
+}
+
+
+### Update Patient (PUT)
+PUT http://localhost:3000/api/patients/68f20486624bce2a7eb0531f
+Body (JSON):
+{
+  "phone": "09171234567"
+}
+
 ---
 
 ## 👨‍⚕️ Doctor Routes
@@ -43,6 +63,22 @@ POST http://localhost:3000/api/doctors
 | POST | `/api/doctors` | Add a new doctor |
 | PUT | `/api/doctors/:id` | Update an existing doctor |
 | DELETE | `/api/doctors/:id` | Delete a doctor |
+
+### Create Doctor (POST)
+POST http://localhost:3000/api/doctors
+Body (JSON):
+{
+  "name": "Dr. Jennica Lee",
+  "specialty": "Cardiology"
+}
+
+### Update Doctor (PUT)
+PUT http://localhost:3000/api/doctors/68f1fc4d624bce2a7eb0529b
+Body (JSON):
+{
+  "name": "Dr. Janice Yu",
+  "specialty": "Neurology"
+}
 
 ---
 
@@ -57,6 +93,26 @@ POST http://localhost:3000/api/appointments
 | PUT | `/api/appointments/:id` | Update appointment details |
 | DELETE | `/api/appointments/:id` | Delete or cancel an appointment |
 
+### Create Appointment (POST)
+POST http://localhost:3000/api/appointments
+Body (JSON):
+{
+  "patientId": "6710175d2b0c4f00123abcd7",
+  "doctorId": "671018a72b0c4f00123abcd4",
+  "startAt": "2025-10-23T11:00:00Z",
+  "endAt": "2025-10-23T11:30:00Z",
+  "notes": "Follow-up consultation"
+}
+
+### Update Appointment (PUT)
+PUT http://localhost:3000/api/appointments/68f11c4f7c546a164e848fa9
+{
+  "patientId": "68f11ab27c546a164e848fa4",
+  "doctorId": "68f11ab27c546a164e848fb7",
+  "date": "2025-10-22",
+  "time": "09:15"
+}
+---
 # 🧩 Environment Variables
 
 Create a .env file in the root directory with the following:
