@@ -112,6 +112,7 @@ PUT http://localhost:3000/api/appointments/68f11c4f7c546a164e848fa9
   "date": "2025-10-22",
   "time": "09:15"
 }
+
 ---
 # 🧩 Environment Variables
 
