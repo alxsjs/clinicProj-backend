@@ -1,27 +1,22 @@
 const express = require('express');
-const bodyParser = require('body-parser');
-const dotenv = require('dotenv');
-const connectDB = require('./config/db');
+const cors = require('cors');
 
-// Import routes
 const patientRoutes = require('./routes/patientRoutes');
 const doctorRoutes = require('./routes/doctorRoutes');
 const appointmentRoutes = require('./routes/appointmentRoutes');
 
-dotenv.config();
-connectDB();
-
 const app = express();
-app.use(bodyParser.json());
 
-// Route grouping
-app.use('/api', patientRoutes);
-app.use('/api', doctorRoutes);
-app.use('/api', appointmentRoutes);
+// Enable CORS for frontend
+app.use(cors({ origin: 'http://localhost:3001' })); // your React port
 
-// Test route
-app.get('/', (req, res) => res.send('Clinic API is running...'));
+// Parse JSON
+app.use(express.json());
 
-const PORT = process.env.PORT || 3000;
+// Mount routes
+app.use('/api/patients', patientRoutes);
+app.use('/api/doctors', doctorRoutes);
+app.use('/api/appointments', appointmentRoutes);
+
+const PORT = 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
