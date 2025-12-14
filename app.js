@@ -7,16 +7,19 @@ const appointmentRoutes = require('./routes/appointmentRoutes');
 
 const app = express();
 
-// Enable CORS for frontend
-app.use(cors({ origin: 'http://localhost:3001' })); // your React port
+// ✅ Allow requests from anywhere (safe for development)
+app.use(cors());
 
 // Parse JSON
 app.use(express.json());
 
-// Mount routes
+// API routes
 app.use('/api/patients', patientRoutes);
 app.use('/api/doctors', doctorRoutes);
 app.use('/api/appointments', appointmentRoutes);
 
-const PORT = 3000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// ✅ Render requires process.env.PORT
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
